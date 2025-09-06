@@ -136,6 +136,166 @@ export default function PricingPage() {
 
         {/* FAQ Section */}
         <div className="mt-20 max-w-3xl mx-auto">
+          {/* Features Comparison Table */}
+          <div className="mb-20">
+            <h2 className="text-3xl md:text-4xl font-black text-center mb-12 bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
+              Features Comparison
+            </h2>
+            
+            <div className="bg-white rounded-3xl p-8 border border-gray-100 shadow-xl overflow-hidden hover-lift">
+              <div className="overflow-x-auto">
+                <table className="min-w-full">
+                  <thead>
+                    <tr className="border-b border-gray-200">
+                      <th className="text-left px-6 py-4 font-bold text-gray-900">Features</th>
+                      <th className="text-left px-6 py-4 font-bold text-gray-900">Replaces</th>
+                      <th className="text-left px-6 py-4 font-bold text-gray-900">Other Tools</th>
+                      <th className="text-left px-6 py-4 font-bold text-gray-900">Inflow</th>
+                    </tr>
+                  </thead>
+                  <tbody className="divide-y divide-gray-100">
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">CRM & Pipeline Management</td>
+                      <td className="px-6 py-4">
+                        <span className="inline-block px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">HubSpot</span>
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-red-600">$99/MONTHLY</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">Unlimited Sales Funnels</td>
+                      <td className="px-6 py-4">
+                        <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">ClickFunnels</span>
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-red-600">$297/MONTHLY</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">Website Builder</td>
+                      <td className="px-6 py-4">
+                        <div className="flex gap-2">
+                          <span className="inline-block px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">Wix</span>
+                          <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">WordPress</span>
+                        </div>
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-red-600">$29/MONTHLY</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">Surveys & Forms</td>
+                      <td className="px-6 py-4">
+                        <span className="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">SurveyMonkey</span>
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-red-600">$49/MONTHLY</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">Email Marketing</td>
+                      <td className="px-6 py-4">
+                        <div className="flex gap-2">
+                          <span className="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">Mailchimp</span>
+                          <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">ActiveCampaign</span>
+                        </div>
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-red-600">$99/MONTHLY</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">2-Way SMS Marketing</td>
+                      <td className="px-6 py-4">
+                        <span className="inline-block px-3 py-1 bg-red-100 text-red-800 rounded-full text-sm font-medium">Twilio</span>
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-red-600">$99/MONTHLY</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">Booking & Appointments</td>
+                      <td className="px-6 py-4">
+                        <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Calendly</span>
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-red-600">$29/MONTHLY</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">Workflow Automations</td>
+                      <td className="px-6 py-4">
+                        <span className="inline-block px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">Zapier</span>
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-red-600">$169/MONTHLY</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">Courses/Products</td>
+                      <td className="px-6 py-4">
+                        <span className="inline-block px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm font-medium">Teachable</span>
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-red-600">$99/MONTHLY</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">Call Tracking</td>
+                      <td className="px-6 py-4">
+                        <span className="inline-block px-3 py-1 bg-purple-100 text-purple-800 rounded-full text-sm font-medium">CallRail</span>
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-red-600">$49/MONTHLY</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">Reputation Management</td>
+                      <td className="px-6 py-4">
+                        <span className="inline-block px-3 py-1 bg-yellow-100 text-yellow-800 rounded-full text-sm font-medium">BirdEye</span>
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-red-600">$159/MONTHLY</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">Tracking & Analytics</td>
+                      <td className="px-6 py-4">
+                        <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">Google Analytics</span>
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-red-600">$299/MONTHLY</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">Communities</td>
+                      <td className="px-6 py-4">
+                        <span className="inline-block px-3 py-1 bg-orange-100 text-orange-800 rounded-full text-sm font-medium">Skool</span>
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-red-600">$89/MONTHLY</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">Document Signing</td>
+                      <td className="px-6 py-4">
+                        <span className="inline-block px-3 py-1 bg-blue-100 text-blue-800 rounded-full text-sm font-medium">DocuSign</span>
+                      </td>
+                      <td className="px-6 py-4 font-semibold text-red-600">$47/MONTHLY</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                    <tr className="hover:bg-gray-50 transition-colors">
+                      <td className="px-6 py-4 text-gray-700">Gray-Labeled Mobile App</td>
+                      <td className="px-6 py-4">
+                        <span className="inline-block px-3 py-1 bg-gradient-to-r from-pink-500 to-purple-600 text-white rounded-full text-sm font-medium">Unique to Inflow</span>
+                      </td>
+                      <td className="px-6 py-4 text-gray-500">—</td>
+                      <td className="px-6 py-4 text-green-500 font-bold text-xl">✓</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              
+              <div className="text-center mt-8 pt-6 border-t border-gray-200">
+                <p className="text-2xl font-bold text-gray-900">
+                  Overall Price: 
+                  <span className="line-through text-red-500 ml-2">$1,612 per month</span> 
+                  <span className="mx-2">→</span>
+                  <span className="bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">$75 per month</span>
+                </p>
+                <p className="text-lg text-gray-600 mt-2">Save over $1,500 monthly with Inflow's all-in-one solution</p>
+              </div>
+            </div>
+          </div>
+
           <h2 className="text-3xl font-black text-center mb-12 bg-gradient-to-r from-pink-500 to-purple-600 bg-clip-text text-transparent">
             Frequently Asked Questions
           </h2>
